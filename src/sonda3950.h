@@ -10,7 +10,7 @@ const uint8_t _mediaLecturas = 10;
 
 class sonda3950 {
 public:
-  sonda3950(uint8_t _pin, uint16_t _adcResolution = 1024, uint32_t _rPULLUP = 98000, uint32_t _rTermistor = 100000);  // Constructor
+  sonda3950(uint8_t _pin, uint16_t _adcResolution = 1024, uint32_t _rPULLUP = 100000, uint32_t _rTermistor = 100000);  // Constructor
   void begin();                                                                                                       // Inicializamos la sonda
   void setVccReal(float vcc = 4.28);                                                                                  // Voltaje de funcionamiento real. Este voltaje es a través del conector USB
   void actualizar();                                                                                                  // Actualizamos el valor de la sonda
